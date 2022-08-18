@@ -18,6 +18,7 @@ devServer:{
     hot: false,
     static:path.join(__dirname,"/dist"),
     port:1239,
+    open:true,
     devMiddleware: {
         writeToDisk: true,
       },
@@ -55,6 +56,14 @@ devServer:{
                       },
                   },
                 ],
+              },
+
+              {
+                test: require.resolve("jquery"),
+                loader: "expose-loader",
+                options: {
+                  exposes: ["$", "jQuery"],
+                },
               },
         ]
     },
