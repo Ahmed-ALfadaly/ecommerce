@@ -14,6 +14,7 @@ body {
   font-size: 14px;
   color: #555555;
   line-height: 1.429;
+  overflow-x: hidden;
 }
 
 .custom-navbar {
@@ -194,7 +195,7 @@ body {
 }
 .custom-carousel-indicators-primary{
   top: 235px;
-  right: 35%;
+  right: 40%;
 }
 .custom-carousel-indicators-primary img{
   width: 75px;
@@ -372,3 +373,230 @@ h3.custom-heading{
   border-top: 1px solid #eef0ea;
   padding-top: 25px;
 }
+/*تذييل الصفحه*/
+#brand-logos{
+  background-color: #dbeefa;
+  padding: 25px 0px;
+  color: #555555;
+  width: 100%;
+}
+#brand-logos img{
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 100px;
+  max-height: 100px;
+}
+#footer-nav{
+  width: 100%;
+  background-color: #1e1e1e;
+  background-image: url(../images/bg_footer_1.png), url(../images/bg_footer_2.png);
+  background-repeat: no-repeat no-repeat;
+  background-position: 110% 0, -10% -150%;
+  padding: 50px 0 40px;
+}
+#footer-nav-links{
+  margin: 30px 0;
+}
+#footer-nav-links a{
+  color: #555555;
+  margin-left: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#footer-nav-links a:hover{
+  color: #dddd;
+}
+#newsletter{
+  border-top: 1px solid #292929;
+}
+#footer-nav form{
+  max-width: 260px;
+  margin: auto;
+}
+input[type=email]{
+  direction: rtl;
+  text-align: right;
+}
+#footer-nav label{
+  font-size: 12px;
+  color: #555;
+  margin: 27px 0 16px;
+  font-weight: bold;
+}
+.custom-btn-primary2{
+  color: #000;
+  background-color: #f8ad47;
+  border-color: #f79306;
+
+}
+.custom-btn-primary2:active,
+.custom-btn-primary2:focus,
+.custom-btn-primary2:hover,
+.custom-btn-primary2:active:hover,
+.custom-btn-primary2:active:focus{
+  background-color: #f79306;
+  border-color: #f79306;
+  color: #000;
+}
+#newsletter form input{
+  background-color: #313131;
+  height: 38px;
+  opacity: 0.6;
+  border: none;
+}
+#newsletter form button{
+border-radius: 0px;
+font-size: 14px;
+  padding: 6px 12px 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: inherit;
+}
+#footer-copyright-social{
+  background-color: #151515;
+  color: #303030;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+.social-icons a{
+  color: #303030;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.social-icons a:hover{
+  color: #19becd;
+  text-decoration: none;
+}
+/*تجاوبيه الصفحه*/
+
+@media (max-width: 1199.98px) { 
+  .custom-navbar .navbar-nav li a.nav-link {
+    padding: 8px;
+    
+  }
+  #carousel-featured .carousel-indicators{
+    margin-right: 19%;
+  }
+ }
+
+@media (max-width: 991.98px) { 
+  .navbar-header{
+    display: block;
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  .navbar-header .btn-icon{
+       float: left;
+  }
+  .custom-navbar .container{
+    max-width: 100%;
+  }
+  .custom-navbar{
+    padding: 15px 20px 30px;
+  }
+  .form-inline{
+    width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0px;
+  }
+  .form-inline .dropdown{
+    display: none;
+  }
+  .overlay{
+    display: none;
+  }
+  .form-inline .custom-form-control{
+    width: 90%;
+  }
+  .form-inline .search-btn{
+    width: 10%;
+  }
+  .custom-navbar a.btn-icon,
+  .custom-navbar button.btn-icon{
+    color: #777;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    padding: 5px 10px 4px;
+  }
+  .custom-navbar .navbar-nav li a.nav-link{
+    padding: 10px 15px;
+  }
+  .navbar-collapse{
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    margin-top: 15px;
+  }
+  #carousel-featured .carousel-indicators{
+    margin-right: 5%;
+  }
+  .custom-thumbnail .add-to-card-btn{
+    background-color: #fff;
+    font-weight: normal;
+    color: #868686;
+  }
+  #copyright, .social-icons{
+   width: 100%;
+   text-align: center;
+  }
+  .social-icons{
+    font-size: 150%;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px){
+  .custom-thumbnail img{
+    height: 200px;
+  }
+}
+@media (max-width: 767.98px) { 
+  #carousel-featured, #carousel-featured .product-details{
+    height: auto;
+  }
+  #carousel-featured .product-details{
+    position: static;/*علشان نلغي مفعول position :relative;*/
+    text-align: center;
+  }
+  #carousel-featured{
+    padding-bottom: 25px;
+  }
+  #carousel-featured .carousel-item img {
+    height: 250px;
+  }
+  #brand-logos img{
+    max-height: 100px;
+    max-width: 100px;
+    margin: 5px 24px 5px 23px;
+  }
+  #footer-nav .footer-logo{
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  #footer-nav form{
+    min-width: 95%;
+    width: 95%;
+  }
+ #newsletter input-group{
+  width: 90%;
+ }
+ #brand-logos .img-container img{
+  margin: 5px 5px;
+}
+ }
+@media (max-width: 575.98px) { 
+  .form-inline .custom-form-control{
+    width: 80%;
+  }
+  .form-inline .search-btn{
+    width: 20%;
+  }
+  #carousel-featured .carousel-item{
+    padding: 0 18px;
+  }
+  #brand-logos .img-container img{
+    margin: 5px -5px;
+  }
+ }
